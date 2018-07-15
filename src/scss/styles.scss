@@ -1,0 +1,54 @@
+@import 'bootstrap/bootstrap';
+@import 'variables';
+
+a,
+a:hover {
+  color: $color-v8ch-dark-green;
+  font-weight: bold;
+}
+
+body {
+  background: $color-v8ch-green;
+  color: $color-v8ch-dark-green;
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+header {
+  background: $color-v8ch-dark-green;
+  color: $color-v8ch-green;
+  padding: 2em;
+  text-align: center;
+
+  & h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+main {
+  padding: 1em;
+}
+
+.wheel {
+  animation: rotate-gear 2s linear infinite;
+  fill: $color-v8ch-green;
+  transform-origin: center center;
+}
+
+.tractor {
+  fill: $color-v8ch-green;
+}
+
+.v8ch-logo {
+  & svg {
+    height: 80px;
+  }
+}
+
+@keyframes rotate-gear {
+  100% {
+    transform: rotate(360deg);
+  }
+}
